@@ -214,6 +214,58 @@ Performance may vary depending on hardware, system conditions, and workload.
 
 ---
 
+## 11.1 // Implementation and Results
+
+### 01 - System Architecture
+
+The system architecture illustrates the transaction workflow, from input validation to cryptographic integrity verification.
+
+<img src="./IMG_7946.png" width="100%"/>
+
+### 02 - Elliptic Curve Cryptography
+
+The secp256k1 elliptic curve is used for cryptographic key generation, digital signing, and signature verification.
+
+<img src="./IMG_7947.png" width="100%"/>
+
+### 03 - SHA-256 Avalanche Effect
+
+The avalanche effect demonstrates how a small modification to transaction data produces a significantly different hash.
+
+<img src="./IMG_7948.png" width="100%"/>
+
+### 04 - ECDSA Tamper Detection
+
+The digital signature verification process detects unauthorized modifications to signed transactions.
+
+<img src="./IMG_7949.png" width="100%"/>
+
+### 05 - Merkle Tree Tamper Detection
+
+The Merkle tree demonstrates how changes to individual transaction hashes affect the final Merkle root.
+
+<img src="./IMG_7950.png" width="100%"/>
+
+### 06 - Transaction Creation Output
+
+The system demonstrates successful transaction creation and cryptographic processing.
+
+<img src="./IMG_7951.png" width="100%"/>
+
+### 07 - Tamper Detection Test
+
+The system evaluates transaction integrity by testing modified transaction data.
+
+<img src="./IMG_7952.png" width="100%"/>
+
+### 08 - Merkle Root Comparison
+
+The original and modified Merkle roots are compared to detect transaction tampering.
+
+<img src="./IMG_7953.png" width="100%"/>
+
+---
+
 ## 12 // How to Run
 
 Requirements:
